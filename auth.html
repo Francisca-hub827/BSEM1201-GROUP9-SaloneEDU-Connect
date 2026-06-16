@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Login or Register | SaloneEDU Connect
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body class="auth-body" data-page="auth">
+  <header class="site-header auth-header">
+   <a aria-label="SaloneEDU Connect Home" class="brand" href="index.html">
+    <span class="brand-mark">
+     SE
+    </span>
+    <span>
+     SaloneEDU Connect
+    </span>
+   </a>
+   <nav aria-label="Main navigation" class="main-nav always-row">
+    <a href="index.html">
+     Home
+    </a>
+    <a href="courses.html">
+     Courses
+    </a>
+    <a href="tutors.html">
+     Tutors
+    </a>
+    <a href="scholarship.html">
+     Scholarship
+    </a>
+    <a href="contact.html">
+     Contact
+    </a>
+    <a class="nav-pill auth-link active" href="auth.html">
+     Login
+    </a>
+    <a class="nav-pill dashboard-link" href="dashboard.html">
+     Dashboard
+    </a>
+   </nav>
+  </header>
+  <main class="auth-main">
+   <section class="auth-visual">
+    <p class="eyebrow">
+     Student access
+    </p>
+    <h1>
+     Login or create your account.
+    </h1>
+    <p>
+     Save courses, request tutors, apply for scholarships and track progress from your dashboard.
+    </p>
+    <div class="auth-points">
+     <span>
+      🔐 Secure demo
+     </span>
+     <span>
+      📚 Saved courses
+     </span>
+     <span>
+      🎓 Scholarship tracking
+     </span>
+    </div>
+   </section>
+   <section class="auth-panel">
+    <div class="auth-tabs">
+     <button class="active" data-auth-tab="login">
+      Login
+     </button>
+     <button data-auth-tab="register">
+      Register
+     </button>
+    </div>
+    <form class="auth-form active" data-login-form="">
+     <h2>
+      Student Login
+     </h2>
+     <p>
+      For returning students who already have an account.
+     </p>
+     <label>
+      Email or Phone
+      <input placeholder="Email or phone number" required="" type="text"/>
+     </label>
+     <label>
+      Password
+      <input data-password-field="" placeholder="Your password" required="" type="password"/>
+     </label>
+     <div class="form-row">
+      <label class="check">
+       <input data-show-password="" type="checkbox"/>
+       Show password
+      </label>
+      <a data-forgot-password="" href="#">
+       Forgot password?
+      </a>
+     </div>
+     <button class="btn btn-primary" type="submit">
+      Login
+     </button>
+     <p class="switch-note">
+      New student?
+      <a data-switch-register="" href="#">
+       Create a new account
+      </a>
+     </p>
+    </form>
+    <form class="auth-form" data-register-form="">
+     <h2>
+      Create Account
+     </h2>
+     <p>
+      Register so your courses, tutors and scholarships can be saved.
+     </p>
+     <div class="two-col">
+      <label>
+       Full name
+       <input placeholder="Your full name" required="" type="text"/>
+      </label>
+      <label>
+       Phone
+       <input placeholder="076 000 000" required="" type="tel"/>
+      </label>
+     </div>
+     <label>
+      Email
+      <input placeholder="student@email.com" required="" type="email"/>
+     </label>
+     <div class="two-col">
+      <label>
+       School
+       <input placeholder="School or institution" required="" type="text"/>
+      </label>
+      <label>
+       District
+       <input placeholder="Your district" required="" type="text"/>
+      </label>
+     </div>
+     <label>
+      Password
+      <input data-password-field="" minlength="6" placeholder="Create password" required="" type="password"/>
+     </label>
+     <small data-strength-text="">
+      Password strength: none
+     </small>
+     <label class="check">
+      <input data-show-password="" type="checkbox"/>
+      Show password
+     </label>
+     <button class="btn btn-primary" type="submit">
+      Register
+     </button>
+    </form>
+   </section>
+  </main>
+  <div class="toast" data-toast="">
+  </div>
+  <script src="js/script.js">
+  </script>
+ </body>
+</html>

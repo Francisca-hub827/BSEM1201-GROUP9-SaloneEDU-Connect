@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Dashboard | SaloneEDU Connect
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body data-page="dashboard" data-protected="true">
+  <header class="site-header">
+   <a aria-label="SaloneEDU Connect Home" class="brand" href="index.html">
+    <span class="brand-mark">
+     SE
+    </span>
+    <span>
+     SaloneEDU Connect
+    </span>
+   </a>
+   <button aria-label="Open menu" class="menu-toggle">
+    ☰
+   </button>
+   <nav aria-label="Main navigation" class="main-nav">
+    <a href="index.html">
+     Home
+    </a>
+    <a href="courses.html">
+     Courses
+    </a>
+    <a href="tutors.html">
+     Tutors
+    </a>
+    <a href="scholarship.html">
+     Scholarship
+    </a>
+    <a href="contact.html">
+     Contact
+    </a>
+    <a class="nav-pill auth-link" href="auth.html">
+     Login
+    </a>
+    <a class="nav-pill dashboard-link" href="dashboard.html">
+     Dashboard
+    </a>
+   </nav>
+  </header>
+  <main>
+   <section class="dashboard-hero">
+    <div>
+     <p class="eyebrow">
+      Student dashboard
+     </p>
+     <h1>
+      Hello,
+      <span data-student-name="">
+       student
+      </span>
+      .
+     </h1>
+     <p>
+      This personal page shows saved courses, tutor requests, scholarship progress and study reminders.
+     </p>
+    </div>
+    <div class="progress-ring">
+     <strong>
+      72%
+     </strong>
+     <span>
+      Profile ready
+     </span>
+    </div>
+   </section>
+   <section class="dashboard-grid section-pad">
+    <article class="dash-card">
+     <h3>
+      Saved courses
+     </h3>
+     <ul data-saved-courses="">
+      <li>
+       No course saved yet.
+      </li>
+     </ul>
+     <a href="courses.html">
+      Add courses →
+     </a>
+    </article>
+    <article class="dash-card">
+     <h3>
+      Tutor requests
+     </h3>
+     <ul data-tutor-requests="">
+      <li>
+       No tutor request yet.
+      </li>
+     </ul>
+     <a href="tutors.html">
+      Request tutor →
+     </a>
+    </article>
+    <article class="dash-card">
+     <h3>
+      Scholarship status
+     </h3>
+     <ul data-scholarship-status="">
+      <li>
+       No scholarship application yet.
+      </li>
+     </ul>
+     <a href="scholarship.html">
+      Apply →
+     </a>
+    </article>
+    <article class="dash-card highlight">
+     <h3>
+      Getting ready tips
+     </h3>
+     <p data-daily-tip="">
+      Choose two subjects and study them before opening social media.
+     </p>
+     <button class="btn btn-soft small-btn" data-new-tip="">
+      New tip
+     </button>
+    </article>
+    <article class="dash-card wide">
+     <h3>
+      Weekly study timetable
+     </h3>
+     <div class="timetable">
+      <span>
+       Mon: English
+      </span>
+      <span>
+       Tue: Mathematics
+      </span>
+      <span>
+       Wed: ICT
+      </span>
+      <span>
+       Thu: Past Questions
+      </span>
+      <span>
+       Fri: Tutor Review
+      </span>
+     </div>
+    </article>
+    <article class="dash-card">
+     <h3>
+      Replies
+     </h3>
+     <p>
+      <strong>
+       2 tutor replies
+      </strong>
+      are waiting for confirmation.
+     </p>
+     <p>
+      <strong>
+       1 scholarship
+      </strong>
+      is still pending review.
+     </p>
+    </article>
+   </section>
+  </main>
+  <footer class="site-footer compact-footer">
+   <div class="footer-main">
+    <h3>
+     SaloneEDU Connect
+    </h3>
+    <p>
+     Digital education support for learners in Sierra Leone: courses, tutors, scholarships, study tools and a student dashboard.
+    </p>
+    <div class="footer-contact">
+     <span>📞 +232 76 000 000</span>
+     <span>✉️ help@saloneeduconnect.com</span>
+     <span>📍 Freetown, Sierra Leone</span>
+    </div>
+   </div>
+   <nav aria-label="Footer navigation" class="footer-links">
+    <a href="index.html">
+     Home
+    </a>
+    <a href="courses.html">
+     Courses
+    </a>
+    <a href="tutors.html">
+     Tutors
+    </a>
+    <a href="scholarship.html">
+     Scholarship
+    </a>
+    <a href="contact.html">
+     Contact
+    </a>
+    <a href="auth.html">
+     Login
+    </a>
+    <a href="dashboard.html">
+     Dashboard
+    </a>
+   </nav>
+   <p class="copyright">
+    © 2026 SaloneEDU Connect | Built for Web Design 1, Limkokwing University Sierra Leone
+   </p>
+  </footer>
+  <button class="chat-fab" data-open-chat="">
+   Ask Cisca
+  </button>
+  <div class="chat-box" data-chat-box="">
+   <div class="chat-head">
+    <strong>
+     Ask Cisca
+    </strong>
+    <button data-close-chat="">
+     ×
+    </button>
+   </div>
+   <p>
+    Use your dashboard to track your learning. Try saving one course and requesting one tutor.
+   </p>
+  </div>
+  <div class="toast" data-toast="">
+  </div>
+  <script src="js/script.js">
+  </script>
+ </body>
+</html>
