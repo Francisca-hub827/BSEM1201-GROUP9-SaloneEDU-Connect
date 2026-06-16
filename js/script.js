@@ -57,20 +57,37 @@ function requireLogin(message = 'Please login or register first so this can be s
 function updateAuthLinks() {
   const user = getUser();
 
-  // Keep the Login link visible on every page for clear navigation.
+  // If there is no logged-in student, show Login and hide Dashboard/Logout.
+  // If there is a logged-in student, hide Login and show Dashboard/Logout.
+  document.body.classList.toggle('is-logged-in', Boolean(user));
+
   $$('.auth-link').forEach((link) => {
     link.textContent = 'Login';
     link.href = 'auth.html';
+    link.hidden = Boolean(user);
   });
 
-  // Show Dashboard as an extra link only after a student has logged in.
-  document.body.classList.toggle('is-logged-in', Boolean(user));
   $$('.dashboard-link').forEach((link) => {
     link.hidden = !user;
+  });
+
+  $$('.logout-link').forEach((button) => {
+    button.hidden = !user;
   });
 }
 
 updateAuthLinks();
+
+$$('.logout-link').forEach((button) => {
+  button.addEventListener('click', () => {
+    localStorage.removeItem('seUser');
+    showToast('You have logged out successfully.');
+    updateAuthLinks();
+    setTimeout(() => {
+      window.location.href = 'auth.html';
+    }, 800);
+  });
+});
 
 if (document.body.dataset.protected === 'true' && !isLoggedIn()) {
   showToast('Login first to open your personal student page.');

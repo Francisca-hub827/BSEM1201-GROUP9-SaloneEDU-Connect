@@ -237,6 +237,22 @@ p {
   background: var(--pink-dark);
 }
 
+.main-nav .logout-link {
+  border: 0;
+  color: #fff;
+  background: linear-gradient(135deg, var(--pink), var(--gold));
+  cursor: pointer;
+  font: inherit;
+  padding: 11px 15px;
+  border-radius: 999px;
+  font-weight: 850;
+}
+
+.main-nav .logout-link:hover {
+  background: linear-gradient(135deg, var(--pink-dark), var(--orange));
+}
+
+
 .menu-toggle {
   display: none;
   border: 0;
