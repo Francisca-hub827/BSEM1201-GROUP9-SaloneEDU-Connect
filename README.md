@@ -1,49 +1,90 @@
 # SaloneEDU Connect
 
-A responsive Web Design 1 group project focused on solving an education access problem in Sierra Leone.
+SaloneEDU Connect is a responsive Web Design 1 group project created to support learners in Sierra Leone with courses, tutor access, scholarship information, study support and student help services.
 
-## Purpose
+## Project Overview
 
-SaloneEDU Connect helps learners find WASSCE revision support, digital skills courses, tutors, scholarship opportunities and study guidance in one platform.
+This website was developed as a full web-based digital solution for DCOMP204 Web Design 1. Our group focused on an education access problem in Sierra Leone. Many students struggle to find learning materials, tutor support, scholarship opportunities and study guidance in one place. SaloneEDU Connect brings these services together in one simple, responsive and interactive platform.
 
-## Main Pages
+## Problem Being Solved
 
-- Home page with search, education hero section, service cards and full-width slideshow
-- Courses page with WASSCE, ICT, web design, business and girls in digital skills courses
-- Tutors page with subject tutor profiles and login-protected tutor requests
-- Scholarship page with available scholarships and login-protected application flow
-- Apply page with scholarship application form and checklist
-- Login/Register page with separate forms, password strength, show password and forgot password demo
-- Dashboard with saved courses, tutor requests, scholarship status, timetable and study tips
-- Contact page with phone number, WhatsApp, email and help form
+The main problem is that educational support information is often scattered. Students may need courses, revision help, tutors, scholarships and contact support, but these services are not always easy to find together. This project provides a student-friendly platform where learners can view courses, request tutors, check scholarship opportunities, login/register and track their learning support through a dashboard.
 
-## JavaScript Features
+## Sustainable Development Goal
 
-- Responsive mobile navigation
-- Course search and category filtering
-- Full-width automatic slideshow with left/right arrows and dots
-- Toast pop-up messages
-- Login/register demo using localStorage
-- Login protection before saving courses, requesting tutors or applying for scholarships
-- Password strength meter
-- Dashboard data storage using localStorage
-- Floating quiz modal
-- Floating Ask Cisca helper
-- Animated statistics
+This project supports **SDG 4: Quality Education**. It promotes easier access to learning opportunities by providing digital support for students, including course information, tutor support, scholarship guidance, revision tools and study help.
+
+## Main Features
+
+- Responsive homepage with education-focused design
+- Course page with available learning areas
+- Course search/filter feature
+- Tutor support page
+- Scholarship page with available opportunities
+- Apply/notification form for scholarship support
+- Login and registration demo
+- Student dashboard for saved courses, tutor requests and scholarship progress
+- Contact page with phone, email, location and support form
+- Interactive quiz button
+- Ask Cisca helper box
+- Pop-up toast messages for user feedback
+- JavaScript interactions using localStorage
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- GitHub
+- GitHub Pages
+
+## Website Pages
+
+- Home (`index.html`)
+- Courses (`courses.html`)
+- Tutors (`tutors.html`)
+- Scholarship (`scholarship.html`)
+- Apply (`apply.html`)
+- Login/Register (`auth.html`)
+- Dashboard (`dashboard.html`)
+- Contact (`contact.html`)
+
+## GitHub Repository Link
+
+[Click here to view the GitHub repository](https://github.com/Francisca-hub827/BSEM1201-GROUP9-SaloneEDU-Connect)
+
+## Live Website Link
+
+[Click here to view the live website](https://francisca-hub827.github.io/BSEM1201-GROUP9-SaloneEDU-Connect/)
+
+## How the Website Works
+
+Users can browse the website to view courses, tutors, scholarships and contact support. When a user wants to save a course, request a tutor or apply for scholarship support, the website asks them to login or register first. After login, the user can access the dashboard to see saved courses, tutor requests, scholarship status and study guidance.
+
+## Folder Structure
+
+```text
+BSEM1201-GROUP9-SaloneEDU-Connect/
+├── index.html
+├── courses.html
+├── tutors.html
+├── scholarship.html
+├── apply.html
+├── auth.html
+├── dashboard.html
+├── contact.html
+├── README.md
+├── LICENSE
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+└── assets/
+    └── images/
+```
 
 ## Deployment
 
-Upload the folder to GitHub and enable GitHub Pages from the repository settings.
+The website is deployed using GitHub Pages.
 
-
-## Final adjustment notes
-- Login is visible in the top navigation on every page.
-- Dashboard appears as an extra navigation link after login.
-- Footer is consistent on all public pages and removed from the login/register page.
-- Form placeholders and select boxes are lighter for a cleaner look.
-
-
-## Final refinements
-- Improved image positioning so tutor/course/scholarship faces display clearly.
-- Expanded the footer to a full-width professional footer with navigation and contact details.
-- Kept the login/register page without a footer as requested.
+Live site: <https://francisca-hub827.github.io/BSEM1201-GROUP9-SaloneEDU-Connect/>
